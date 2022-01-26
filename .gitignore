@@ -1,0 +1,5 @@
+.idea/
+.scannerwork/
+__pycache__/
+*.pyc
+*.pyo
