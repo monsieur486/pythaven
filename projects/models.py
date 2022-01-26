@@ -1,4 +1,4 @@
-from django.db import models  #NOSONAR
+from django.db import models
 
 
 class Question(models.Model):
