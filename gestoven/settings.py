@@ -11,13 +11,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-94kv5nb*wasb*-rj5-#81i_0-bvgf_qppw&%*^jyztypgubyck'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'projects.apps.ProjectsConfig',
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -63,8 +64,10 @@ WSGI_APPLICATION = 'gestoven.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': 'bd_config.cnf',
+        },
     }
 }
 
