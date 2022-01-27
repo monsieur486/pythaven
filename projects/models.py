@@ -8,4 +8,4 @@ class Information(models.Model):
     type = models.CharField(max_length=50)
     favorite = models.BooleanField(default=False)
     java_version = models.CharField(max_length=50)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField("date published")
