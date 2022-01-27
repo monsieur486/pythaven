@@ -3,4 +3,4 @@
 __pycache__/
 *.pyc
 *.pyo
-bd_config.cnf
+gestoven/bd_config.cnf
