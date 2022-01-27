@@ -9,3 +9,6 @@ class Information(models.Model):
     favorite = models.BooleanField(default=False)
     java_version = models.CharField(max_length=50)
     pub_date = models.DateTimeField("date published")
+
+    def __unicode__(self):
+        return "{0} {1}".format(self.group_id, self.artifact_id)
